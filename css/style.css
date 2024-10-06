@@ -1,10 +1,38 @@
+body,html{
+    box-sizing: border-box;
+}
 header{
-    background-color: beige;
+    background-image: url("/img/985cabb6920eaaeecfea44bd6b5ef5d8.png")
+}
+header .loginlink a{
+    background-color: #F84646;
+    border: solid #F84646;
+    border-radius: 5px;
+    padding: 10px 20px 10px 20px;
+}
+header .form-control{
+    padding: 10px;
+}
+header .btn{
+    background-color: #F84646;
+    border-radius: 8px;
+    padding:5px;
+    width: 90.76px;
+    height: 50.01px;
+}
+header .input-group{
+    width: 335px;
+height: 59.85px;
+
+
+
+
+opacity: 1px;
+
 }
 .midredblock{
     background-color:#F84646;
 }
 footer{
     background-color: #F8464A;
-    ;
 }
