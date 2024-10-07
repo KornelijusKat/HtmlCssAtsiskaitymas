@@ -1,19 +1,23 @@
 body,html{
     box-sizing: border-box;
-    width:100vw;
-    height:100vh;
+    width:100%;
+    height:100%;
     margin:0 auto;
 }
+.headcontain{
+    
+}
 header{
+    background-color:rgba(740,64,55);
     background-image: url("/img/985cabb6920eaaeecfea44bd6b5ef5d8.png");
-    background-size: cover;
-    background-image: contain;
     background-repeat: no-repeat;
-    min-height:601px;
-    min-width:375px;
+    background-size:100% 100%;
+    justify-content: center;
+    height:601px;
 }
 .header-container{
     padding: 20px 20px 20px 5px;
+   
 }
 header .customA{
     font-size: 0.875rem;
@@ -74,7 +78,13 @@ header .btn{
 }
 .main{
     padding-bottom: 0px;
-    margin-bottom:0px;
+    margin-bottom: 0px;
+    width:100%;
+    height:100%;
+}
+.firstSection{
+    width:100%;
+    margin:0 auto;
 }
 .firstSection h2{
     font-family: "Manrope", sans-serif;
@@ -83,7 +93,10 @@ header .btn{
     line-height: 32.78px ;
 }
 .firstSection article{
-    margin-top: 60px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left:30px;
+    margin-right:30px;
 }
 .firstSection .col-md-3{
     margin-bottom: 80px;
@@ -106,6 +119,14 @@ header .btn{
     height:836px;
     width:100%;
     color: #FFFFFF;
+}
+@media(min-width:768px){
+    .midredblock{
+       height:286px;
+    }
+    .midredblock img{
+        transform: rotate(270deg);
+    }
 }
 .midredblock h2{
     font-family: "Manrope", sans-serif;
@@ -146,7 +167,6 @@ header .btn{
 }
 .imgArticleSec article a{
     display:inline-block;
-    width: 338px;
     background-color: #F84646;
     border-radius: 5px;
     padding: 10px 20px 10px 20px;
@@ -155,9 +175,19 @@ header .btn{
     font-size:1rem;
     color:#FFFFFF;
 }
-.logoRefBlock{
+@media(min-width:1200px){
+.imgArticleSec article{
+    text-align: left;
+    width:40%;
+}
+.imgArticleSec img{
+}
+}
+.logoRefSection{
     background-color: #F4F5F7;
-    width:375px;
+}
+.logoRefBlock{
+    width:100%;
     height:904px;
     margin:100px auto;
 }
@@ -172,9 +202,6 @@ header .btn{
     font-weight: 500;
     font-size: 0.875rem;
     line-height: 32px;
-}
-.logoRefBlock .logos .col-md-12{
-    
 }
 .logoRefBlock .imgDiv{
     margin:auto;
@@ -226,13 +253,14 @@ header .btn{
 }
 footer{
     margin-top:100px;
-    height:1340px;
     width:100%;
     background-color: #F8464A;
 }
 footer ul{
     list-style: none;
     padding-left: 0;
+    margin-bottom:60px;
+
 }
 footer ul li{
     font-family: "Inter", sans-serif;
@@ -251,17 +279,46 @@ footer ul li a{
 footer p{
     color: #FFFFFF;
     font-size: 16px;
+    margin-bottom: 50px;
 }
-@media(min-width: 1440px){
+@media(min-width:768px){
+    header{
+        max-width:100%;
+        min-height:647px;
+    }
+    .imgArticleSec{
+        width:90%;
+        margin:0 auto;
+    }
+    .logoRefBlock{
+        height:100%;
+    }
+}
+@media(min-width: 1200px){
     header{
        max-width:100%;
        max-height:100%;
        min-height: 754px;
        background-size:100vw;
     }
+    .container-fluid{
+        margin-top: 70px;
+        margin-left:100px;
+        text-align: right;
+    }
+    .container-fluid article{
+        text-align: left;
+    }
     header article p{
         font-size:1.25rem;
         letter-spacing: 0.2px;
+    }
+    .imgArticleSec{
+        width:100%;
+    }
+    .imgArticleSec .row{
+        width:100%;
+        
     }
     .midredblock{
         width:100%;
@@ -276,16 +333,12 @@ footer p{
         transform: rotate(270deg);
     }
     .logoRefBlock{
-        width:100%;
+        width:80%;
+        height:100%;
+        padding: 20px;
     }
     footer{
         width:100%;
         height: 536px;
-    }
-}
-@media(min-width:1024px){
-    header{
-        max-width:100%;
-        max-height:100%;
     }
 }
